@@ -1,8 +1,7 @@
 {
   "name": "es6-app",
   "version": "1.0.0",
-  "description":
-    "App built using advanced JavaScript's syntax and a guide to import npm modules in our front end application.",
+  "description": "App built using advanced JavaScript's syntax and a guide to import npm modules in our front end application.",
   "main": "index.js",
   "scripts": {
     "build": "browserify index.js -o dist/bundle.js",
@@ -12,13 +11,20 @@
     "type": "git",
     "url": "git+ssh://git@github.com/BalasubramaniM/es6-app.git"
   },
-  "keywords": ["es6", "npm", "browserify", "watchify"],
+  "keywords": [
+    "es6",
+    "npm",
+    "browserify",
+    "watchify"
+  ],
   "browserify": {
     "transform": [
       [
         "babelify",
         {
-          "presets": ["es2015"]
+          "presets": [
+            "es2015"
+          ]
         }
       ]
     ]

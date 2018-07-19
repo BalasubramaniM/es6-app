@@ -7,11 +7,11 @@ var _readingTime2 = _interopRequireDefault(_readingTime);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var bodyContent = document.getElementById("readingText");
+window.calcRT = function (ev) {
+	var stats = (0, _readingTime2.default)(ev.value).text;
 
-var stats = (0, _readingTime2.default)(bodyContent.innerText).text;
-
-document.getElementById("readingTimeElem").innerText = stats;
+	document.getElementById("readingTime").innerText = stats;
+};
 
 },{"reading-time":2}],2:[function(require,module,exports){
 module.exports = require('./lib/reading-time');

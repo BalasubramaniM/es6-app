@@ -1,7 +1,7 @@
 import readingTime from "reading-time";
 
-var bodyContent = document.getElementById("readingText");
+window.calcRT = ev => {
+	var stats = readingTime(ev.value).text;
 
-var stats = readingTime(bodyContent.innerText).text;
-
-document.getElementById("readingTimeElem").innerText = stats;
+	document.getElementById("readingTime").innerText = stats;
+};
